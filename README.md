@@ -59,3 +59,20 @@ Run the tests:
 ```bash
 pipenv run pytest test/test_array_helper.py
 ```
+
+To run at the command line, with the `python` REPL:
+
+```bash
+pipenv run python
+```
+
+```python
+> from app.array_helper import ArrayHelper
+>
+> ArrayHelper().divide([1, 2, 3, 4, 5], 3)
+[[1, 2], [3, 4], [5]]
+> ArrayHelper().divide([1, 2, 3, 4, 5], 4)
+[[1], [2], [3], [4, 5]]
+> ArrayHelper().divide([1, 2, 3, 4, 5], 5)
+[[1], [2], [3], [4], [5]]
+```
