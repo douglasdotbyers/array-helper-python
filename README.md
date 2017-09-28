@@ -8,7 +8,7 @@ An array helper, in Python, which provides a method to divide an array into n pa
 
 
  - Where the size of the array _cannot_ be divided equally by n:
-    - The first n-1 parts are of the same size.
+    - The first n-1 parts are of the same size, as large as possible.
     - The last part contains the remaining array items.
 
 
@@ -65,6 +65,8 @@ To run at the command line, with the `python` REPL:
 ```bash
 pipenv run python
 ```
+
+Then:
 
 ```python
 > from app.array_helper import ArrayHelper
